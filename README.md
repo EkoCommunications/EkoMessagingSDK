@@ -8,8 +8,6 @@
 
 EkoChat is a delightful networking library for iOS. It is extending the powerful high-level messaging abstractions provided by [Eko](https://www.ekoapp.com/). It has a scalable architecture with well-designed, feature-rich APIs that are a joy to use.
 
-EkoChat powers some of the most popular and critically-acclaimed apps on the iPhone such as AirAsia and TrueID.
-
 ## How To Get Started
 
 - [Download Latest EkoChat SDK manually](https://docs.upstra.co/ios/changelog) and try out the sample app.
