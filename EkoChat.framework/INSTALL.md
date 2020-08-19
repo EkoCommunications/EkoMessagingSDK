@@ -4,7 +4,6 @@
 
 * In your App's target's ``Build Settings``: 
   * ensure that ``Always Embed Swift Standard Libraries`` is set to ```YES```;
-* add ``EkoChat.framework/zlib/`` into the ``Import Paths`` under the ``Swift Compiler - Search Paths`` section;
 * When targeting iOS, watchOS or tvOS, create a new ``Run Script Phase`` in the app’s target’s ``Build Phases`` and paste the following snippet in the script text field: 	
 ``` bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/EkoChat.framework/strip-frameworks.sh" ```
 
