@@ -10,6 +10,17 @@
 #define EkoEnums_h
 #import <Foundation/Foundation.h>
 
+#pragma mark - Backend mapping
+
+// EkoDataType
+static NSString * const kEkoDataTypeText = @"text";
+
+// EkoReferenceType
+static NSString * const kEkoReferenceTypePost = @"post";
+static NSString * const kEkoReferenceTypeComment = @"comment";
+static NSString * const kEkoReferenceTypeMessage = @"message";
+static NSString * const kEkoReferenceTypeContent = @"content";
+
 typedef NS_ENUM(NSInteger, EkoConnectionStatus) {
     // The client/manager has never been connected. Or the client has been reset.
     EkoConnectionStatusNotConnected = 0,
@@ -110,6 +121,7 @@ typedef NS_ENUM(NSInteger, EkoErrorCode) {
     EkoErrorCodeMalformedData = 800130,
     EkoErrorCodeQueryInProgress = 800170,
     EkoErrorCodeConnectionError = 800210,
+    EkoErrorCodeUploadFailed = 800310
 };
 
 /**
@@ -125,6 +137,51 @@ typedef NS_ENUM(NSUInteger, EkoChannelMembershipType) {
     EkoChannelMembershipTypeNone,
     EkoChannelMembershipTypeMember,
     EkoChannelMembershipTypeBanned
+};
+
+/**
+   Community Membership types.
+
+   Each member can be only on one state at any given time.
+
+   - EkoCommunityMembershipTypeNone: Not a member of this channel.
+   - EkoCommunityMembershipTypeMember: Standard member.
+   - EkoCommunityMembershipTypeBanned: Banned member.
+ */
+typedef NS_ENUM(NSUInteger, EkoCommunityMembershipType) {
+    EkoCommunityMembershipTypeNone,
+    EkoCommunityMembershipTypeMember,
+    EkoCommunityMembershipTypeBanned
+};
+
+/**
+ Reference type of an object we are referencing to.
+
+ - EkoReferenceTypeMessage: A text message.
+ - EkoReferenceTypePost: A post of user.
+ - EkoReferenceTypeComment: A comment. 
+ */
+typedef NS_ENUM(NSInteger, EkoReferenceType) {
+    EkoReferenceTypeMessage,
+    EkoReferenceTypePost,
+    EkoReferenceTypeComment
+};
+
+/**
+ Data type of the data we intend to sent.
+
+ - EkoDataTypeText: A text.
+ */
+typedef NS_ENUM(NSInteger, EkoDataType) {
+    EkoDataTypeText
+};
+
+/**
+ SortBy.
+ */
+typedef NS_ENUM(NSInteger, EkoSortBy) {
+    EkoSortByFirstCreated,
+    EkoSortByLastCreated,
 };
 
 /**
@@ -152,6 +209,60 @@ typedef NS_ENUM(NSInteger, EkoSyncState) {
     EkoSyncStateSynced = 1,
     EkoSyncStateSyncing = 2,
     EkoSyncStateError = 3,
+};
+
+/**
+ * Filter type option for query the community
+ */
+typedef NS_ENUM(NSInteger, EkoCommunityQueryFilter) {
+    // query for all community, regardless of whether the user has joined or not
+    EkoCommunityQueryFilterAll = 0,
+    // query for all community where the user is member
+    EkoCommunityQueryFilterUserIsMember = 1,
+    // query for all community where the user is not a member
+    EkoCommunityQueryFilterUserIsNotMember = 2,
+};
+
+/**
+ * Sort type option for sorting the community
+ */
+typedef NS_ENUM(NSUInteger, EkoCommunitySortOption) {
+    EkoCommunitySortOptionLastCreated,
+    EkoCommunitySortOptionFirstCreated
+};
+
+/**
+ * Community membership filter options
+ */
+typedef NS_ENUM(NSUInteger, EkoCommunityMembershipFilter) {
+    EkoCommunityMembershipFilterAll,
+    EkoCommunityMembershipFilterBan
+};
+
+/*
+ * Sort type option for sorting the community categories
+ */
+typedef NS_ENUM(NSUInteger, EkoCommunityCategoriesSortOption) {
+    EkoCommunityCategoriesSortOptionLastCreated,
+    EkoCommunityCategoriesSortOptionFirstCreated,
+    EkoCommunityCategoriesSortOptionDisplayName
+};
+
+
+/**
+ Reference Type for comment
+ */
+typedef NS_ENUM(NSUInteger, EkoCommentReferenceType) {
+    EkoCommentReferenceTypePost,
+    EkoCommentReferenceTypeContent
+};
+
+/**
+ Target Type for post
+ */
+typedef NS_ENUM(NSUInteger, EkoPostTargetType) {
+    EkoPostTargetTypeUser,
+    EkoPostTargetTypeCommunity
 };
 
 #endif /* EkoEnums_h */

@@ -11,9 +11,10 @@
 #import "EkoClient.h"
 #import "EkoCollection.h"
 #import "EkoMessage.h"
-#import "EkoMessageReaction.h"
 #import "EkoObject.h"
 #import "EkoUser.h"
+#import "EkoReaction.h"
+
 @import UIKit.UIImage;
 
 /**
@@ -362,9 +363,9 @@
 /**
 Get all of the reactions on the specific message.
 @param messageId The related message id to be observed.
-@return The `EkoMessageReaction` live collection.
+@return The `EkoReaction` live collection.
  */
-- (nonnull EkoCollection<EkoMessageReaction *> *)allMessageReactionsWithMessageId:(nonnull NSString *)messageId;
+- (nonnull EkoCollection<EkoReaction *> *)allMessageReactionsWithMessageId:(nonnull NSString *)messageId;
 
 /**
  Sets the tags for the given message.

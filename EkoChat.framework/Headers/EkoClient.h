@@ -14,6 +14,7 @@
 #import "EkoUserNotificationsManager.h"
 
 @class EkoUser;
+@class UIImage;
 
 typedef void (^EkoRequestCompletion)(BOOL success, NSError * _Nullable error);
 
@@ -133,6 +134,25 @@ __attribute__((objc_subclassing_restricted))
  */
 - (void)setUserMetadata:(nullable NSDictionary<NSString *, id> *)data
              completion:(nullable EkoRequestCompletion)completion;
+
+/**
+   @abstract Sets the avatar for the current user.
+   @param image an UIImage
+ */
+- (void)setAvatar:(nonnull UIImage *)image
+       completion:(nullable EkoRequestCompletion)completion;
+
+/**
+   @abstract Sets the avatar for the current user.
+   @param avatarUrl custom avatar URL string
+ */
+- (void)setAvatarCustomUrl:(nonnull NSString *)avatarUrl
+                completion:(nullable EkoRequestCompletion)completion;
+
+/**
+ Set configurations for sdk.
+ */
++ (void)setEkoConfig:(nullable NSDictionary<NSString *, id> *)config;
 
 /**
    Block call of `init` and `new` because this object cannot be created directly

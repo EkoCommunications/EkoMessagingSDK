@@ -83,6 +83,9 @@ __attribute__((objc_subclassing_restricted))
  Whether the message has been edited. If editedAt > createdAt, this value is true.
  */
 @property (assign, readonly, nonatomic) BOOL isEdited;
+
+
+@property (assign, readonly, nonatomic) BOOL isMessageEdited;
 /**
  The sync state of the message.
  */

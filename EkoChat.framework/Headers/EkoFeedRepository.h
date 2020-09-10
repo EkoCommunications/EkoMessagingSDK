@@ -22,7 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface EkoFeedRepository : NSObject
 
 @property (strong, readonly, nonatomic) EkoClient *client;
-@property (readonly, nonatomic) NSUInteger totalUnreadCount;
 
 /**
    Designated intializer
@@ -60,6 +59,14 @@ Get the collection of user feed.
 - (nonnull EkoCollection<EkoPost *> *)getUserFeed:(NSString *)userId
                                            sortBy:(EkoUserFeedSortOption)sortBy;
 
+
+/**
+ Retrieves post for particular post id
+ 
+ @param postId The id for the post
+ */
+- (nonnull EkoObject<EkoPost *> *)getPostForPostId:(nonnull NSString *)postId;
+
 /**
  Get the collection of reactions for particular post for provided reaction name.
  
@@ -78,6 +85,19 @@ Get all  reactions for particular post
 
 */
 - (nonnull EkoCollection<EkoPostReaction *> *)getAllReactionsForPostWithPostId:(nonnull NSString *)postId;
+
+
+/**
+Get the collection of community feed.
+
+@param communityId The community id of selected community
+@param sortBy The sort option that user wish to select
+@return The EkoCollection of EkoPost  object. Observe the changes for getting the result.
+ 
+*/
+- (nonnull EkoCollection<EkoPost *> *)getCommunityFeedWithCommunityId:(nonnull NSString *)communityId
+                                                               sortBy:(EkoCommunitySortOption)sortBy;
+
 
 /**
    Block call of `init` and `new` because this object cannot be created directly

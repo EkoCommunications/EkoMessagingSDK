@@ -7,19 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "EkoEnums.h"
 
 @class EkoMessageReaction;
 @class EkoUser;
-
-
-/**
- Reference Type
-
- - EkoReferenceTypeMessage: A text message.
- */
-typedef NS_ENUM(NSInteger, EkoReferenceType) {
-    EkoReferenceTypeMessage
-};
 
 /**
  Reaction object

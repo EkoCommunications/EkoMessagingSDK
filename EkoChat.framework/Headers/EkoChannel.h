@@ -12,6 +12,7 @@
 @class EkoChannelParticipation;
 @class EkoChannelModeration;
 @class EkoChannelMembership;
+@class EkoImageData;
 
 /**
  * All Channel Type
@@ -94,6 +95,11 @@ __attribute__((objc_subclassing_restricted))
  * Total number of messages in this channel
  */
 @property (readonly, nonatomic) NSInteger messageCount;
+
+/**
+ * The avatar model of the channel
+ */
+@property (nullable, strong, readonly, nonatomic) EkoImageData *avatar;
 
 /**
    Returns a participation instance

@@ -10,7 +10,6 @@
 #import "EkoClient.h"
 #import "EkoCollection.h"
 #import "EkoMessage.h"
-#import "EkoMessageReaction.h"
 
 @class EkoMessage;
 

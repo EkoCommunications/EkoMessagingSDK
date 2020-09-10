@@ -208,6 +208,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UploadableFile;
+
+/// Helper class to upload files to our file service api.
+/// It supports concurrent file uploads. This class is supposed to be used in conjunction with other api i.e
+/// You upload the files using this service and use the fileId returned in response and send it along with
+/// request for another api.
+SWIFT_CLASS("_TtC7EkoChat20EkoFileUploadService")
+@interface EkoFileUploadService : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)uploadWithFiles:(NSArray<UploadableFile *> * _Nonnull)files params:(NSDictionary<NSString *, id> * _Nullable)params endpoint:(NSString * _Nonnull)endpoint accessToken:(NSString * _Nonnull)accessToken completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nonnull, NSArray<UploadableFile *> * _Nonnull))completion;
+@end
+
 @class NSStream;
 
 SWIFT_CLASS("_TtC7EkoChat16FoundationStream")
@@ -215,6 +227,15 @@ SWIFT_CLASS("_TtC7EkoChat16FoundationStream")
 /// Delegate for the stream methods. Processes incoming bytes
 - (void)stream:(NSStream * _Nonnull)aStream handleEvent:(NSStreamEvent)eventCode;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7EkoChat23MultipartRequestBuilder")
+@interface MultipartRequestBuilder : NSObject
+- (nonnull instancetype)initWithFiles:(NSArray<UploadableFile *> * _Nonnull)files params:(NSDictionary<NSString *, id> * _Nullable)params endpoint:(NSString * _Nonnull)endpoint accessToken:(NSString * _Nonnull)accessToken OBJC_DESIGNATED_INITIALIZER;
+- (NSURLRequest * _Nullable)build SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -885,6 +906,25 @@ SWIFT_CLASS("_TtC7EkoChat13SocketManager")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+
+/// Class to represent the file that is being uploaded.
+SWIFT_CLASS("_TtC7EkoChat14UploadableFile")
+@interface UploadableFile : NSObject
+/// Data representing actual File.
+@property (nonatomic, copy) NSData * _Nonnull fileData;
+/// Name of the file being uploaded. Example: my-awesome-file.pdf.
+/// Extension will be automatically extracted from your File Name
+@property (nonatomic, copy) NSString * _Nullable fileName;
+/// MimeType of the file being uploaded. Default value is “application/octet-stream”
+@property (nonatomic, copy) NSString * _Nonnull mimeType;
+/// Any metadata associated with the file. Right now its ignored
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull metaData;
+/// Initializes the instance for this class.
+- (nonnull instancetype)initWithFileData:(NSData * _Nonnull)fileData fileName:(NSString * _Nullable)fileName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC7EkoChat9WebSocket")
@@ -1107,6 +1147,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UploadableFile;
+
+/// Helper class to upload files to our file service api.
+/// It supports concurrent file uploads. This class is supposed to be used in conjunction with other api i.e
+/// You upload the files using this service and use the fileId returned in response and send it along with
+/// request for another api.
+SWIFT_CLASS("_TtC7EkoChat20EkoFileUploadService")
+@interface EkoFileUploadService : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)uploadWithFiles:(NSArray<UploadableFile *> * _Nonnull)files params:(NSDictionary<NSString *, id> * _Nullable)params endpoint:(NSString * _Nonnull)endpoint accessToken:(NSString * _Nonnull)accessToken completion:(void (^ _Nonnull)(NSArray<NSDictionary<NSString *, id> *> * _Nonnull, NSArray<UploadableFile *> * _Nonnull))completion;
+@end
+
 @class NSStream;
 
 SWIFT_CLASS("_TtC7EkoChat16FoundationStream")
@@ -1114,6 +1166,15 @@ SWIFT_CLASS("_TtC7EkoChat16FoundationStream")
 /// Delegate for the stream methods. Processes incoming bytes
 - (void)stream:(NSStream * _Nonnull)aStream handleEvent:(NSStreamEvent)eventCode;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7EkoChat23MultipartRequestBuilder")
+@interface MultipartRequestBuilder : NSObject
+- (nonnull instancetype)initWithFiles:(NSArray<UploadableFile *> * _Nonnull)files params:(NSDictionary<NSString *, id> * _Nullable)params endpoint:(NSString * _Nonnull)endpoint accessToken:(NSString * _Nonnull)accessToken OBJC_DESIGNATED_INITIALIZER;
+- (NSURLRequest * _Nullable)build SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -1784,6 +1845,25 @@ SWIFT_CLASS("_TtC7EkoChat13SocketManager")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+
+/// Class to represent the file that is being uploaded.
+SWIFT_CLASS("_TtC7EkoChat14UploadableFile")
+@interface UploadableFile : NSObject
+/// Data representing actual File.
+@property (nonatomic, copy) NSData * _Nonnull fileData;
+/// Name of the file being uploaded. Example: my-awesome-file.pdf.
+/// Extension will be automatically extracted from your File Name
+@property (nonatomic, copy) NSString * _Nullable fileName;
+/// MimeType of the file being uploaded. Default value is “application/octet-stream”
+@property (nonatomic, copy) NSString * _Nonnull mimeType;
+/// Any metadata associated with the file. Right now its ignored
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull metaData;
+/// Initializes the instance for this class.
+- (nonnull instancetype)initWithFileData:(NSData * _Nonnull)fileData fileName:(NSString * _Nullable)fileName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC7EkoChat9WebSocket")
