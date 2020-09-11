@@ -82,9 +82,18 @@ The data type.
  */
 @property (nonnull, strong, readonly, nonatomic) NSDate *updatedAt;
 /**
+ The last time this comment has been updated.
+ */
+@property (nonnull, strong, readonly, nonatomic) NSDate *editedAt;
+/**
  Whether the comment has been deleted.
  */
 @property (assign, readonly, nonatomic) BOOL isDeleted;
+/**
+ Whether the comment has been edited.
+ */
+@property (assign, readonly, nonatomic) BOOL isEdited;
+
 /**
  The sync state of the comment.
  */
