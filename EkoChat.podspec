@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "EkoChat"
-    s.version      = "4.0.0"
+    s.version      = "4.2.0"
     s.summary      = "An SDK for messaging provided by Upstra."
     s.description  = <<-DESC
     A powerful chat messaging tools for productivity powered by Upstra.
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'EkoChat.framework', 'Realm.framework'
     s.platform = :ios
     s.swift_version = "5"
-    s.ios.deployment_target  = '9.0'
+    s.ios.deployment_target  = '11.0'
 end

@@ -44,6 +44,10 @@ __attribute__((objc_subclassing_restricted))
  */
 @property (nullable, strong, readonly, nonatomic) EkoImageData *avatar;
 
+/**
+ If its the deleted category
+ */
+@property (assign, nonatomic) BOOL isDeleted;
 
 @end
 

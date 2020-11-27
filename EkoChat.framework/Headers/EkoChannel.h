@@ -22,15 +22,17 @@ typedef NS_ENUM(NSUInteger, EkoChannelType) {
     EkoChannelTypePrivate,
     EkoChannelTypeBroadcast,
     EkoChannelTypeConversation,
-    EkoChannelTypeByTypes
+    EkoChannelTypeByTypes,
+    EkoChannelTypeLive,
+    EkoChannelTypeCommunity
 };
 
 /**
  * Channel Type that allowed to be created
  */
 typedef NS_ENUM(NSUInteger, EkoChannelCreateType) {
-    EkoChannelCreateStandard,
-    EkoChannelCreatePrivate
+    EkoChannelCreateTypeStandard,
+    EkoChannelCreateTypePrivate
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -97,11 +99,6 @@ __attribute__((objc_subclassing_restricted))
 @property (readonly, nonatomic) NSInteger messageCount;
 
 /**
- * The avatar model of the channel
- */
-@property (nullable, strong, readonly, nonatomic) EkoImageData *avatar;
-
-/**
    Returns a participation instance
  */
 @property (readonly, nonatomic) EkoChannelParticipation *participation;
@@ -136,6 +133,10 @@ __attribute__((objc_subclassing_restricted))
  */
 @property (strong, nonatomic) NSDate *lastActivity;
 
+/**
+ If this channel has been deleted already
+ */
+@property (assign, nonatomic) BOOL isDeleted;
 
 /**
    @abstract Returns a channel type from create channel type enum.
@@ -145,6 +146,19 @@ __attribute__((objc_subclassing_restricted))
    @return A channel type enum
  */
 + (EkoChannelType )channelTypeForCreateType:(EkoChannelCreateType)type;
+
+/**
+ * File id for the avatar for this Channel. This can be used in
+ * EkoFileRepository to download actual UIImage instance.
+ */
+@property (nullable, strong, nonatomic) NSString *avatarFileId;
+
+/**
+ Gets the image data associated with this Channel.
+ 
+ @return: Returns EkoImageData if present. Else returns nil.
+ */
+-(void)getAvatarInfo:(void (^ _Nonnull)(EkoImageData * _Nullable imageData))completion;
 
 /**
    Block call of `init` and `new` because this object cannot be created directly

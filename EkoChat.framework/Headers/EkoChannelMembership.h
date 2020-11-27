@@ -47,4 +47,5 @@
    Roles
  */
 @property (nullable, assign, readonly, nonatomic) NSArray <NSString *> *roles;
+
 @end

@@ -19,6 +19,11 @@
 #import "EkoBroadcastChannelQueryBuilder.h"
 #import "EkoClient.h"
 
+@class EkoLiveChannelQuery;
+@class EkoLiveChannelQueryBuilder;
+@class EkoCommunityChannelQuery;
+@class EkoCommunityChannelQueryBuilder;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EkoChannelQueryBuilder : NSObject
@@ -31,6 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (nonnull EkoByTypesChannelQuery *)byTypesWithBuilder:(EkoByTypesChannelQueryBuilder *)builder;
 - (nonnull EkoBroadcastChannelQuery *)broadcastWithBuilder:(EkoBroadcastChannelQueryBuilder *)builder;
 - (nonnull EkoConversationChannelQuery *)conversationWithBuilder:(EkoConversationChannelQueryBuilder *)builder;
+- (nonnull EkoLiveChannelQuery *)liveTypeWithBuilder:(EkoLiveChannelQueryBuilder *)builder;
+- (nonnull EkoCommunityChannelQuery *)communityTypeWithBuilder:(EkoCommunityChannelQueryBuilder *)builder;
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;

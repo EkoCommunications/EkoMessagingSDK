@@ -177,14 +177,6 @@ typedef NS_ENUM(NSInteger, EkoDataType) {
 };
 
 /**
- SortBy.
- */
-typedef NS_ENUM(NSInteger, EkoSortBy) {
-    EkoSortByFirstCreated,
-    EkoSortByLastCreated,
-};
-
-/**
  * Sort type option for sorting the user
  */
 typedef NS_ENUM(NSUInteger, EkoUserSortOption) {
@@ -263,6 +255,49 @@ typedef NS_ENUM(NSUInteger, EkoCommentReferenceType) {
 typedef NS_ENUM(NSUInteger, EkoPostTargetType) {
     EkoPostTargetTypeUser,
     EkoPostTargetTypeCommunity
+};
+
+/**
+ Request Query options. 
+ */
+typedef NS_ENUM(NSInteger, EkoQueryOption) {
+    /**
+     Query only deleted results
+     */
+    EkoQueryOptionDeleted,
+    /**
+     Query only non deleted results
+     */
+    EkoQueryOptionNotDeleted,
+    /**
+     Query both deleted & non deleted results
+     */
+    EkoQueryOptionAll
+};
+
+/**
+ Default Sort Option
+ */
+typedef NS_ENUM(NSInteger, EkoSortBy) {
+    EkoSortByFirstCreated,
+    EkoSortByLastCreated,
+};
+
+/**
+ Default Ordering Option
+ */
+typedef NS_ENUM(NSInteger, EkoOrderBy) {
+    EkoOrderByAscending,
+    EkoOrderByDescending
+};
+
+typedef NS_ENUM(NSInteger, EkoCommunityType) {
+    // Default community
+    EkoCommunityTypeNormal = 0,
+    // Trending community
+    EkoCommunityTypeTrending = 1,
+    // Recommended community
+    EkoCommunityTypeRecommended = 2,
 };
 
 #endif /* EkoEnums_h */

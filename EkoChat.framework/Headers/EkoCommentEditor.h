@@ -11,6 +11,7 @@
 #import "EkoClient.h"
 #import "EkoCollection.h"
 #import "EkoObject.h"
+#import "EkoComment.h"
 
 @class EkoMessage;
 
@@ -27,15 +28,15 @@
 /**
    The comment identifier associated with the instance.
  */
-@property (nonnull, strong, readonly, nonatomic) NSString *commentId;
+@property (nonnull, strong, readonly, nonatomic) EkoComment *comment;
 
 /**
    Designated intializer.
    @param client A valid context instance.
-   @param commentId comment identifier for the selected comment..
+   @param comment EkoComment instance which you want to edit
  */
 - (nonnull instancetype)initWithClient:(nonnull EkoClient *)client
-                             commentId:(nonnull NSString *)commentId NS_DESIGNATED_INITIALIZER;
+                               comment:(nonnull EkoComment *)comment NS_DESIGNATED_INITIALIZER;
 
 /**
    Edits the text message.

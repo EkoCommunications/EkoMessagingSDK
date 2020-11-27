@@ -6,10 +6,10 @@
 //  Copyright © 2020 eko. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "EkoEnums.h"
 #import "EkoObject.h"
 #import "EkoUser.h"
-@import Foundation;
 
 @interface EkoCommunityMembership : NSObject
 
@@ -52,6 +52,16 @@
  The user last activity time.
  */
 @property (nonnull, strong, readonly, nonatomic) NSDate *lastActivityDate;
+
+/**
+ * When this model was created
+ */
+@property (nonnull, strong, nonatomic) NSDate *createdAt;
+
+/**
+ * The date when this model was last updated
+ */
+@property (nonnull, strong, nonatomic) NSDate *updatedAt;
 
 /**
    The community membership status

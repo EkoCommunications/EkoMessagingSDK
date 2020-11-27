@@ -60,7 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 
    @param filter A vaild EkoChannelMembershipFilter enum option
  */
-- (nonnull EkoCollection<EkoChannelMembership *> *)membershipsForFilter:(EkoChannelMembershipFilter)filter;
+- (nonnull EkoCollection<EkoChannelMembership *> *)membershipsForFilter:(EkoChannelMembershipFilter)filter sortBy:(EkoSortBy)sortBy;
 
 /**
    Adds users to the channel

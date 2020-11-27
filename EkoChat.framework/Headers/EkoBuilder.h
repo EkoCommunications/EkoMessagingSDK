@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "EkoChannel.h"
 
 @protocol EkoPostBuilder <NSObject>
 
@@ -25,4 +26,20 @@
 - (NSDictionary<NSString *, id> *)build;
 
 @end
+
+
+@protocol EkoChannelBuilderProtocol <NSObject>
+
+/**
+ Channel type for the builder.
+ */
+@property (assign, nonatomic) EkoChannelType channelType;
+
+/**
+ Returns the JSON representation of the data object needed for channel
+ */
+- (NSDictionary<NSString *, id> *)build;
+
+@end
+
 

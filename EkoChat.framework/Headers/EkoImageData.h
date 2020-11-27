@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 // Class containing information about uploaded images to FileService.
+__attribute__((objc_subclassing_restricted))
 @interface EkoImageData : NSObject
 
 @property (strong, nonatomic) NSString *fileId;

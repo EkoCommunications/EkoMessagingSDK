@@ -16,9 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonnull, nonatomic, strong) NSArray<NSString *> *includingTags;
 @property (nonnull, nonatomic, strong) NSArray<NSString *> *excludingTags;
+@property (assign, nonatomic) BOOL includeDeletedChannels;
 
 - (nonnull instancetype)initWithIncludingTags:(nullable NSArray<NSString *> *)includingTags
-                                excludingTags:(nullable NSArray<NSString *> *)excludingTags NS_DESIGNATED_INITIALIZER;
+                                excludingTags:(nullable NSArray<NSString *> *)excludingTags
+                               includeDeleted:(BOOL)includeDeletedChannels NS_DESIGNATED_INITIALIZER;
 
 - (nonnull instancetype)init NS_UNAVAILABLE;
 + (nonnull instancetype)new NS_UNAVAILABLE;

@@ -15,8 +15,10 @@
 @class UIImage;
 @class UploadableFile;
 
-typedef void (^EkoFileUploadCompletion)(NSArray<EkoFileData *> * _Nonnull fileIds, NSArray<UploadableFile *> * _Nonnull failedUploads);
-typedef void (^EkoImageUploadCompletion)(NSArray<EkoImageData *> * _Nonnull fileIds, NSArray<UIImage *> * _Nonnull failedUploads);
+typedef void (^EkoFileUploadCompletion)(EkoFileData * _Nullable fileData, NSError * _Nullable error);
+typedef void (^EkoImageUploadCompletion)(EkoImageData * _Nullable imageData, NSError * _Nullable error);
+typedef void (^EkoUploadProgressHandler)(double progress);
+
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -31,21 +33,25 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithClient:(EkoClient *)client NS_DESIGNATED_INITIALIZER;
 
 /**
- Uploads images to File Service. Use this api in conjunction to another api such as create post etc
- @param images: Array of images to be uploaded. **Note** The max limit is 10.
- @param completionBlock: Returns the array of uploaded ImageData & array of failed uploads if any.
+ Uploads an image to file service. This method allows you to track upload progress.
+ 
+ @param image: UIImage to be uploaded
+ @param progress: Returns progress value ranging from 0.0 - 1.0
+ @param completion: Returns uploaded image data and failed upload if any.
  */
-- (void)uploadImages:(NSArray<UIImage *> *)images completion: (EkoImageUploadCompletion)completionBlock;
+- (void)uploadImage:(UIImage *)image progress:(nullable EkoUploadProgressHandler)progressHandler completion:(EkoImageUploadCompletion)completionBlock;
 
 /**
- Uploads Files to FileService. Use this api in conjunction to another api such as create post etc.
- @param files: Array of files to be uploaded. *Note* The max limit is 10.
- @param completionBlock: Returns the array of uploaded FileData & array of failed uploads if any.
+ Uploads file to File Service. This method allows you to track upload progress.
+ @param file: A file to be uploaded.
+ @param progress: Returns progress value ranging from 0.0 - 1.0
+ @param completion: Returns uplaoded file data and failed upload if any.
  */
-- (void)uploadFiles:(NSArray<UploadableFile *> *)files completion: (EkoFileUploadCompletion)completionBlock;
+- (void)uploadFile:(UploadableFile *)file progress:(nullable EkoUploadProgressHandler)progressHandler completion:(EkoFileUploadCompletion)completionBlock;
 
 /**
  Downloads the images from file service. Image is downloaded asynchronously.
+ @discussion Image downloaded using EkoFileRepository are not cached by SDK.
  @param fileId : The file id for the image to be downloaded
  @param size : The size in which image is to be downloaded.
  @param completion Returns the downloaded image if success. Else returns error.
@@ -54,6 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Downloads the file from FileService. File is downloaded asynchronously
+ @discussion Files downloaded using EkoFileRepository are not cached by SDK.
  @param fileId : Id of the file to be downloaded
  @param completion Returns the downloaded file if success. Else returns error
  */

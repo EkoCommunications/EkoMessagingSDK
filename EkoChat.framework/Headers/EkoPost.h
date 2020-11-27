@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "EkoEnums.h"
+#import "EkoCommunity.h"
 
 @class EkoPost;
 @class EkoUser;
@@ -113,6 +114,11 @@ __attribute__((objc_subclassing_restricted))
 @property (readonly, nonatomic) BOOL isEdited;
 
 /**
+ Whether the post has been deleted.
+ */
+@property (assign, readonly, nonatomic) BOOL isDeleted;
+
+/**
  Id of the parent post
  */
 @property (nullable, nonatomic) NSString *parentPostId;
@@ -128,9 +134,24 @@ __attribute__((objc_subclassing_restricted))
 @property (nullable, nonatomic) NSArray<EkoPost *> *childrenPosts;
 
 /**
- Fetches few latest comments. To fetch all comments use `EkoCommentRepository`.
+ Id of the target this post belongs to.
  */
-- (void)getLatestComments:(void(^ _Nonnull)(NSArray<EkoComment *> * _Nonnull))completion;
+@property (nonnull, nonatomic) NSString *targetId;
+
+/**
+ Id of the target this post belongs to.
+ */
+@property (nonnull, nonatomic) NSString *targetType;
+
+/**
+ The community to which this post belongs to.
+ */
+@property (nullable, nonatomic) EkoCommunity *targetCommunity;
+
+/**
+ Array of latest 5 comments
+ */
+@property (nonnull, nonatomic) NSArray<EkoComment *> *latestComments;
 
 /**
  Gets the file data associated with this post.

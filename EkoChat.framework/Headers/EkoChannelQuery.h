@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) EkoChannelQueryFilter filter;
 @property (nonnull, nonatomic, strong) NSArray<NSString *> *includingTags;
 @property (nonnull, nonatomic, strong) NSArray<NSString *> *excludingTags;
+@property (assign, nonatomic) BOOL includeDeletedChannels;
 
 - (nonnull EkoCollection<EkoChannel *> *)query;
 

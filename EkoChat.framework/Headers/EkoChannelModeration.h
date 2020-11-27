@@ -74,7 +74,7 @@ NS_ASSUME_NONNULL_BEGIN
    @param userIds An array of userIds
    @param completion A block executed when the request has completed
  */
-- (void)banUsers:(nullable NSArray<NSString *> *)userIds
+- (void)banUsers:(NSArray<NSString *> *)userIds
       completion:(EkoRequestCompletion _Nullable)completion;
 
 /**
@@ -82,7 +82,7 @@ NS_ASSUME_NONNULL_BEGIN
    @param userIds An array of userIds
    @param completion A block executed when the request has completed
  */
-- (void)unbanUsers:(nullable NSArray<NSString *> *)userIds
+- (void)unbanUsers:(NSArray<NSString *> *)userIds
         completion:(EkoRequestCompletion _Nullable)completion;
 
 /**

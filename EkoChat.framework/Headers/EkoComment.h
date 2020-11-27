@@ -32,10 +32,6 @@ __attribute__((objc_subclassing_restricted))
  */
 @property (nonnull, strong, readonly, nonatomic) NSString *userId;
 /**
- The display name of the user.
- */
-@property (nonnull, strong, readonly, nonatomic) NSString *displayName;
-/**
  The reference type.
  */
 @property (readonly, nonatomic) EkoCommentReferenceType referenceType;
