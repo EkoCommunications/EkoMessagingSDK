@@ -27,22 +27,22 @@ Refer to this [link](https://docs.upstra.co/ios/start) for manual installation.
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. To integrate EkoChat, add the following to your `Cartfile`.
 
 ```
-binary "https://github.com/EkoCommunications/EkoMessagingSDK/releases/download/3.2.4/EkoChat.json" ~> 3.2.5
+binary "https://github.com/EkoCommunications/EkoMessagingSDK/releases/download/4.3.0/EkoChat.json" ~> 4.3.0
 ```
 
-> Note: You can change 3.2.5 with the supported release tag
+> Note: You can change 4.3.0 with the supported release tag
 
 ### Cocoapod
 
 To integrate EkoChat into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```
-pod 'EkoChat', '3.2.5', :source => "https://github.com/EkoCommunications/EkoMessagingSDK.git"
+pod 'EkoChat', '4.3.0', :source => "https://github.com/EkoCommunications/EkoMessagingSDK.git"
 ```
 
 > Note: After that you must do [Step-3](https://docs.upstra.co/ios/start) to complete the installation and bypass the AppStore submission.
 
-> Note: You can change 3.2.5 with the supported release tag
+> Note: You can change 4.3.0 with the supported release tag
 
 ### Swift Package Manager
 
@@ -58,11 +58,11 @@ pod 'EkoChat', '3.2.5', :source => "https://github.com/EkoCommunications/EkoMess
 ## Requirements
 
 | EkoChat Version | Minimum iOS Target  | 
-| 3.2.4 | iOS 9 |
+| 4.3.0 | iOS 12 |
 
 ## Dependencies
 
-EkoChat has dependencies with Realm. Currently we are only able to work with Realm version 4.x.x.
+EkoChat has dependencies with Realm. Currently we are only able to work with Realm version 5.x.x.
 
 ## Sample App
 
