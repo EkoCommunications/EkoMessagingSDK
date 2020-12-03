@@ -1,2 +1,4 @@
 EkoChat.framework/** filter=lfs diff=lfs merge=lfs -text
 Realm.framework/** filter=lfs diff=lfs merge=lfs -text
+EkoChat.xcframework/** filter=lfs diff=lfs merge=lfs -text
+Realm.xcframework/** filter=lfs diff=lfs merge=lfs -text
