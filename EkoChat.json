@@ -7,4 +7,5 @@
     "4.2.0": "https://github.com/EkoCommunications/EkoMessagingSDK/releases/download/4.2.0/EkoChat.zip",
     "4.4.0": "https://s3-ap-southeast-1.amazonaws.com/ekosdk-release/ios/4.4.0/ekosdk.zip",
     "4.4.1": "https://s3-ap-southeast-1.amazonaws.com/ekosdk-release/ios/4.4.1/ekosdk.zip",
+    "4.4.2": "https://s3-ap-southeast-1.amazonaws.com/ekosdk-release/ios/4.4.2/ekosdk.zip",
 }

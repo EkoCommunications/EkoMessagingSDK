@@ -2381,15 +2381,25 @@ ___41-[EkoCommentEditor deleteWithCompletion:]_block_invoke
 -[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]
 ___66-[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]_block_invoke
 ___66-[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]_block_invoke_2
-___66-[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]_block_invoke.83
-___66-[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]_block_invoke.84
+___66-[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]_block_invoke.87
+___66-[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]_block_invoke.88
 ___copy_helper_block_e8_32s40s48s56b
 ___destroy_helper_block_e8_32s40s48s56s
+-[EkoCommentEditor deleteFailedCommentWithCompletion:]
+___54-[EkoCommentEditor deleteFailedCommentWithCompletion:]_block_invoke
+___54-[EkoCommentEditor deleteFailedCommentWithCompletion:]_block_invoke_2
+___copy_helper_block_e8_32s40s48r
+___54-[EkoCommentEditor deleteFailedCommentWithCompletion:]_block_invoke.94
+___copy_helper_block_e8_32b40r
+___destroy_helper_block_e8_32s40r
 -[EkoCommentEditor client]
 -[EkoCommentEditor comment]
 -[EkoCommentEditor .cxx_destruct]
 ___block_descriptor_56_e8_32s40r48w_e5_v8?0l
 ___block_descriptor_65_e8_32s40s48s56bs_e56_v32?0"EkoNetworkRequest"8"NSDictionary"16"NSError"24l
+___block_descriptor_56_e8_32s40s48r_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.95
+___block_descriptor_48_e8_32bs40r_e5_v8?0l
 __OBJC_$_CLASS_METHODS_EkoCommentEditor
 __OBJC_$_CLASS_PROP_LIST_EkoCommentEditor
 __OBJC_METACLASS_RO_$_EkoCommentEditor
@@ -2402,10 +2412,16 @@ __OBJC_CLASS_RO_$_EkoCommentEditor
 /Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/Comment/EkoCommentEditor.m
 EkoChat/Comment/EkoCommentEditor.m
 EkoChat/Comment/EkoCommentEditor.h
+__destroy_helper_block_e8_32s40r
+__copy_helper_block_e8_32b40r
+__54-[EkoCommentEditor deleteFailedCommentWithCompletion:]_block_invoke.94
+__copy_helper_block_e8_32s40s48r
+__54-[EkoCommentEditor deleteFailedCommentWithCompletion:]_block_invoke_2
+__54-[EkoCommentEditor deleteFailedCommentWithCompletion:]_block_invoke
 __destroy_helper_block_e8_32s40s48s56s
 __copy_helper_block_e8_32s40s48s56b
-__66-[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]_block_invoke.84
-__66-[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]_block_invoke.83
+__66-[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]_block_invoke.88
+__66-[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]_block_invoke.87
 __66-[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]_block_invoke_2
 __66-[EkoCommentEditor sendRequest:isDeletion:oldData:withCompletion:]_block_invoke
 __41-[EkoCommentEditor deleteWithCompletion:]_block_invoke
@@ -2473,7 +2489,6 @@ __40-[EkoCommentEditor editText:completion:]_block_invoke
 -[EkoCommunityModel includeInAllQuery]
 -[EkoCommunityModel setIncludeInAllQuery:]
 -[EkoCommunityModel .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.95
 _OBJC_CLASSLIST_REFERENCES_$_.96
 _OBJC_IVAR_$_EkoCommunityModel._communityId
 _OBJC_IVAR_$_EkoCommunityModel._channelId
@@ -2554,7 +2569,6 @@ ___52-[PINOperationQueue scheduleOperation:withPriority:]_block_invoke
 -[PINOperationQueue setMaxConcurrentOperations:]
 ___48-[PINOperationQueue setMaxConcurrentOperations:]_block_invoke
 ___copy_helper_block_e8_32s40r
-___destroy_helper_block_e8_32s40r
 -[PINOperationQueue locked_cancelOperation:]
 -[PINOperationQueue setOperationPriority:withReference:]
 -[PINOperationQueue scheduleNextOperations:]
@@ -2615,7 +2629,6 @@ EkoChat/External/PinCache/PINOperation/PINOperationQueue.m
 __44-[PINOperationQueue scheduleNextOperations:]_block_invoke_2
 __44-[PINOperationQueue scheduleNextOperations:]_block_invoke.124
 __44-[PINOperationQueue scheduleNextOperations:]_block_invoke
-__destroy_helper_block_e8_32s40r
 __copy_helper_block_e8_32s40r
 __48-[PINOperationQueue setMaxConcurrentOperations:]_block_invoke
 __52-[PINOperationQueue scheduleOperation:withPriority:]_block_invoke
@@ -2696,14 +2709,12 @@ EkoChat/Feed Service SDK/Model/EkoPost.h
 -[EkoSingleStreamGetTransaction request]
 -[EkoSingleStreamGetTransaction processResult:withStore:]
 ___57-[EkoSingleStreamGetTransaction processResult:withStore:]_block_invoke
-___copy_helper_block_e8_32s40s48r
 -[EkoSingleStreamGetTransaction preprocessWithStore:]
 -[EkoSingleStreamGetTransaction streamId]
 -[EkoSingleStreamGetTransaction setStreamId:]
 -[EkoSingleStreamGetTransaction .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.3
 _OBJC_CLASSLIST_REFERENCES_$_.8
-___block_descriptor_56_e8_32s40s48r_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.18
 __OBJC_CLASS_PROTOCOLS_$_EkoSingleStreamGetTransaction
 __OBJC_METACLASS_RO_$_EkoSingleStreamGetTransaction
@@ -2715,7 +2726,6 @@ __OBJC_CLASS_RO_$_EkoSingleStreamGetTransaction
 /Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/Stream/Transaction/SingleStreamQuery/EkoSingleStreamGetTransaction.m
 EkoChat/Stream/Transaction/SingleStreamQuery/EkoSingleStreamGetTransaction.m
 EkoChat/Stream/Transaction/SingleStreamQuery/EkoSingleStreamGetTransaction.h
-__copy_helper_block_e8_32s40s48r
 __57-[EkoSingleStreamGetTransaction processResult:withStore:]_block_invoke
 +[EkoMessageRepository messageUpdateEndpoint]
 +[EkoMessageRepository messageDidCreateEvent]
@@ -2766,7 +2776,6 @@ ___45-[EkoMessageRepository deleteFailedMessages:]_block_invoke.264
 ___55-[EkoMessageRepository deleteFailedMessage:completion:]_block_invoke
 ___55-[EkoMessageRepository deleteFailedMessage:completion:]_block_invoke_2
 ___55-[EkoMessageRepository deleteFailedMessage:completion:]_block_invoke.267
-___copy_helper_block_e8_32b40r
 -[EkoMessageRepository createTextMessageWithChannelId:text:tags:parentId:]
 -[EkoMessageRepository createImageMessageWithChannelId:image:caption:fullImage:tags:parentId:]
 -[EkoMessageRepository createAudioMessageWithChannelId:audio:fileName:parentId:tags:]
@@ -2820,7 +2829,6 @@ _OBJC_CLASSLIST_REFERENCES_$_.252
 _OBJC_SELECTOR_REFERENCES_.259
 _OBJC_SELECTOR_REFERENCES_.263
 ___block_descriptor_40_e8_32bs_e18_v16?0"RLMRealm"8l
-___block_descriptor_48_e8_32bs40r_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.277
 _OBJC_CLASSLIST_REFERENCES_$_.278
 _OBJC_SELECTOR_REFERENCES_.280
@@ -2857,7 +2865,6 @@ __64-[EkoMessageRepository downloadMediaForMessage:size:completion:]_block_invok
 __copy_helper_block_e8_32b40s48s
 __64-[EkoMessageRepository downloadMediaForMessage:size:completion:]_block_invoke_2
 __64-[EkoMessageRepository downloadMediaForMessage:size:completion:]_block_invoke
-__copy_helper_block_e8_32b40r
 __55-[EkoMessageRepository deleteFailedMessage:completion:]_block_invoke.267
 __55-[EkoMessageRepository deleteFailedMessage:completion:]_block_invoke_2
 __55-[EkoMessageRepository deleteFailedMessage:completion:]_block_invoke
@@ -3058,7 +3065,7 @@ ___67-[EkoCommunityRepository leaveCommunityWithCommunityId:completion:]_block_i
 -[EkoCommunityRepository processJoinOrLeaveCommunityResponse:isLeaving:error:completion:]
 ___89-[EkoCommunityRepository processJoinOrLeaveCommunityResponse:isLeaving:error:completion:]_block_invoke
 ___89-[EkoCommunityRepository processJoinOrLeaveCommunityResponse:isLeaving:error:completion:]_block_invoke_2
-___89-[EkoCommunityRepository processJoinOrLeaveCommunityResponse:isLeaving:error:completion:]_block_invoke.115
+___89-[EkoCommunityRepository processJoinOrLeaveCommunityResponse:isLeaving:error:completion:]_block_invoke.73
 -[EkoCommunityRepository sendRequestToCreateCommunityWithParams:completion:]
 ___76-[EkoCommunityRepository sendRequestToCreateCommunityWithParams:completion:]_block_invoke
 -[EkoCommunityRepository sendRequestToUpdateCommunityWithParams:completion:]
@@ -3066,23 +3073,22 @@ ___76-[EkoCommunityRepository sendRequestToUpdateCommunityWithParams:completion:
 -[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]
 ___82-[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]_block_invoke
 ___82-[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]_block_invoke_2
-___82-[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]_block_invoke.125
+___82-[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]_block_invoke.93
 ___copy_helper_block_e8_32s40s48s56s64s72r
 ___destroy_helper_block_e8_32s40s48s56s64s72r
-___82-[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]_block_invoke.135
+___82-[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]_block_invoke.131
 -[EkoCommunityRepository processDeleteResponse:completion:]
 ___59-[EkoCommunityRepository processDeleteResponse:completion:]_block_invoke
 ___59-[EkoCommunityRepository processDeleteResponse:completion:]_block_invoke_2
-___59-[EkoCommunityRepository processDeleteResponse:completion:]_block_invoke.144
+___59-[EkoCommunityRepository processDeleteResponse:completion:]_block_invoke_3
 -[EkoCommunityRepository client]
 -[EkoCommunityRepository .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.92
-_OBJC_CLASSLIST_REFERENCES_$_.101
+_OBJC_CLASSLIST_REFERENCES_$_.99
+_OBJC_CLASSLIST_REFERENCES_$_.114
 ___block_descriptor_80_e8_32s40s48s56s64s72r_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.132
-_OBJC_SELECTOR_REFERENCES_.137
 ___block_descriptor_64_e8_32s40s48bs56w_e5_v8?0l
 ___block_descriptor_88_e8_32s40s48s56s64s72bs80w_e18_v16?0"RLMRealm"8l
+_OBJC_SELECTOR_REFERENCES_.137
 __OBJC_METACLASS_RO_$_EkoCommunityRepository
 __OBJC_$_INSTANCE_METHODS_EkoCommunityRepository
 _OBJC_IVAR_$_EkoCommunityRepository._client
@@ -3092,18 +3098,18 @@ __OBJC_CLASS_RO_$_EkoCommunityRepository
 /Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/Community Service SDK/Repository/EkoCommunityRepository.m
 EkoChat/Community Service SDK/Repository/EkoCommunityRepository.m
 EkoChat/Community Service SDK/Repository/EkoCommunityRepository.h
-__59-[EkoCommunityRepository processDeleteResponse:completion:]_block_invoke.144
+__59-[EkoCommunityRepository processDeleteResponse:completion:]_block_invoke_3
 __59-[EkoCommunityRepository processDeleteResponse:completion:]_block_invoke_2
 __59-[EkoCommunityRepository processDeleteResponse:completion:]_block_invoke
-__82-[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]_block_invoke.135
+__82-[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]_block_invoke.131
 __destroy_helper_block_e8_32s40s48s56s64s72r
 __copy_helper_block_e8_32s40s48s56s64s72r
-__82-[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]_block_invoke.125
+__82-[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]_block_invoke.93
 __82-[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]_block_invoke_2
 __82-[EkoCommunityRepository processCreateOrUpdateCommunityResponse:error:completion:]_block_invoke
 __76-[EkoCommunityRepository sendRequestToUpdateCommunityWithParams:completion:]_block_invoke
 __76-[EkoCommunityRepository sendRequestToCreateCommunityWithParams:completion:]_block_invoke
-__89-[EkoCommunityRepository processJoinOrLeaveCommunityResponse:isLeaving:error:completion:]_block_invoke.115
+__89-[EkoCommunityRepository processJoinOrLeaveCommunityResponse:isLeaving:error:completion:]_block_invoke.73
 __89-[EkoCommunityRepository processJoinOrLeaveCommunityResponse:isLeaving:error:completion:]_block_invoke_2
 __89-[EkoCommunityRepository processJoinOrLeaveCommunityResponse:isLeaving:error:completion:]_block_invoke
 __67-[EkoCommunityRepository leaveCommunityWithCommunityId:completion:]_block_invoke
@@ -3684,7 +3690,6 @@ ___54-[EkoMessageCreateTransaction processError:withStore:]_block_invoke
 -[EkoMessageCreateTransaction model]
 -[EkoMessageCreateTransaction setModel:]
 -[EkoMessageCreateTransaction .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.99
 _OBJC_CLASSLIST_REFERENCES_$_.103
 __OBJC_CLASS_PROTOCOLS_$_EkoMessageCreateTransaction
 __OBJC_METACLASS_RO_$_EkoMessageCreateTransaction
@@ -4985,6 +4990,7 @@ ___75-[EkoCommunityQueryMembershipTransaction processResult:pageType:withStore:]
 -[EkoCommunityQueryMembershipTransaction setPreviousToken:]
 -[EkoCommunityQueryMembershipTransaction .cxx_destruct]
 ___block_descriptor_64_e8_32s40s48s_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.101
 __OBJC_CLASS_PROTOCOLS_$_EkoCommunityQueryMembershipTransaction
 __OBJC_METACLASS_RO_$_EkoCommunityQueryMembershipTransaction
 __OBJC_$_INSTANCE_METHODS_EkoCommunityQueryMembershipTransaction
@@ -5099,8 +5105,7 @@ ___destroy_helper_block_e8_32s40s48s56s64s72s80s
 -[EkoCommunityQueryTransaction setCommunityType:]
 -[EkoCommunityQueryTransaction .cxx_destruct]
 ___block_descriptor_96_e8_32s40s48s56s64s72s80s_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.140
-_OBJC_CLASSLIST_REFERENCES_$_.157
+_OBJC_CLASSLIST_REFERENCES_$_.166
 __OBJC_$_CLASS_METHODS_EkoCommunityQueryTransaction
 __OBJC_CLASS_PROTOCOLS_$_EkoCommunityQueryTransaction
 __OBJC_METACLASS_RO_$_EkoCommunityQueryTransaction
@@ -5596,6 +5601,7 @@ ___block_literal_global.134
 _sharedLock.sharedLock
 _sharedLock.onceToken
 ___block_literal_global.139
+_OBJC_CLASSLIST_REFERENCES_$_.140
 __sharedTrashURL
 _OBJC_CLASSLIST_REFERENCES_$_.145
 _OBJC_CLASSLIST_REFERENCES_$_.152
