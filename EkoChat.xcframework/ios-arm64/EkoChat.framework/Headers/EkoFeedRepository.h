@@ -126,7 +126,7 @@ NS_ASSUME_NONNULL_BEGIN
  @return The EkoCollection of EkoPost  object. Observe the changes for getting the result.
  */
 - (nonnull EkoCollection<EkoPost *> *)getCommunityFeedWithCommunityId:(nonnull NSString *)communityId
-                                                               sortBy:(EkoCommunitySortOption)sortBy
+                                                               sortBy:(EkoCommunityFeedSortOption)sortBy
                                                        includeDeleted:(BOOL)includeDeletedPosts;
 
 

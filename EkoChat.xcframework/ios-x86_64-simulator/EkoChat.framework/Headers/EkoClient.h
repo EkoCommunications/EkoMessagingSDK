@@ -154,9 +154,9 @@ __attribute__((objc_subclassing_restricted))
                 completion:(nullable EkoRequestCompletion)completion;
 
 /**
- Set configurations for sdk.
+ Set domain key configuration
  */
-+ (void)setEkoConfig:(nullable NSDictionary<NSString *, id> *)config;
++ (void)setDomainKey:(nonnull NSString *)key;
 
 /**
  Checks whether the current user has permission or not.

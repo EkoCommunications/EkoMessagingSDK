@@ -194,6 +194,14 @@ typedef NS_ENUM(NSUInteger, EkoUserFeedSortOption) {
 };
 
 /**
+ * Options to sort community feed
+ */
+typedef NS_ENUM(NSUInteger, EkoCommunityFeedSortOption) {
+    EkoCommunityFeedSortOptionLastCreated,
+    EkoCommunityFeedSortOptionFirstCreated
+};
+
+/**
  Sync State
  */
 typedef NS_ENUM(NSInteger, EkoSyncState) {
@@ -216,11 +224,20 @@ typedef NS_ENUM(NSInteger, EkoCommunityQueryFilter) {
 };
 
 /**
- * Sort type option for sorting the community
+ * Options for sorting communities
  */
 typedef NS_ENUM(NSUInteger, EkoCommunitySortOption) {
     EkoCommunitySortOptionLastCreated,
-    EkoCommunitySortOptionFirstCreated
+    EkoCommunitySortOptionFirstCreated,
+    EkoCommunitySortOptionDisplayName
+};
+
+/**
+ * Options for sorting community memberships
+ */
+typedef NS_ENUM(NSUInteger, EkoCommunityMembershipSortOption) {
+    EkoCommunityMembershipSortOptionLastCreated,
+    EkoCommunityMembershipSortOptionFirstCreated,
 };
 
 /**
@@ -228,7 +245,8 @@ typedef NS_ENUM(NSUInteger, EkoCommunitySortOption) {
  */
 typedef NS_ENUM(NSUInteger, EkoCommunityMembershipFilter) {
     EkoCommunityMembershipFilterAll,
-    EkoCommunityMembershipFilterBan
+    EkoCommunityMembershipFilterBan,
+    EkoCommunityMembershipFilterMember
 };
 
 /*

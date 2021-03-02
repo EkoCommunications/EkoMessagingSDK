@@ -71,6 +71,7 @@
  previous page (if the reverse is `.descending`).
  
  @param referenceId: The id of the post/content that you want to fetch comment for.
+ @param referenceType: The reference type for this comment. Use .content as reference type if you are querying comments for external content. Else use .post.
  @param filterByParentId: Set this to true if you want to fetch comment thread
  @param parentId: The id of the parent comment.
  @param queryOption: Enum to fetch only deleted comments, not deleted comments or both.

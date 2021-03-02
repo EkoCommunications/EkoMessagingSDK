@@ -32,6 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// The query parameters in the url.
 @property (nonnull, strong, nonatomic) NSString *query;
 
++ (instancetype)makeFromWatcherUrlInfo:(NSDictionary<NSString *, id> *)watcherUrlInfo;
+
 @end
 
 NS_ASSUME_NONNULL_END

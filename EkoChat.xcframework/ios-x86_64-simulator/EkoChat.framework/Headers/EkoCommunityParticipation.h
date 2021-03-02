@@ -57,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param roles The list of roles to filter. If you don't want to filter by roles, set empty array instead.
  @param sortBy The sort option that user wish to select
  */
-- (nonnull EkoCollection<EkoCommunityMembership *> *)getMemberships:(EkoCommunityMembershipFilter)filter roles:(NSArray<NSString *> *)roles sortBy:(EkoCommunitySortOption)sortBy;
+- (nonnull EkoCollection<EkoCommunityMembership *> *)getMemberships:(EkoCommunityMembershipFilter)filter roles:(NSArray<NSString *> *)roles sortBy:(EkoCommunityMembershipSortOption)sortBy;
 
 /**
  Get membership information for particular user

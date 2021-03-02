@@ -10,6 +10,9 @@
 
 @class EkoImageData;
 @class EkoUser;
+@class EkoLiveStreamURLInfo;
+@class EkoLiveVideoRecordingData;
+typedef NS_ENUM(NSUInteger, EkoStreamStatus);
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,8 +29,8 @@ __attribute__((objc_subclassing_restricted))
 /// The description of stream object.
 @property (nullable, strong, readonly, nonatomic) NSString *streamDescription;
 
-/// This property is set to true when the stream is now live.
-@property (assign, readonly, nonatomic) BOOL isLive;
+/// The status of this stream.
+@property (assign, readonly, nonatomic) EkoStreamStatus status;
 
 /// Meta data of the stream.
 @property (nonnull, strong, readonly, nonatomic) NSDictionary<NSString *, id> *meta;
@@ -43,6 +46,21 @@ __attribute__((objc_subclassing_restricted))
 
 /// The thumbnail of this stream.
 @property (nullable, strong, readonly, nonatomic) EkoImageData *thumbnail;
+
+/// The RTMP url for streamer side. You use this url to broadcast live video to RTMP server.
+///
+/// This url is intended for one session streaming. After the streaming is ended, you cannot broadcast again using the same url.
+/// To broadcast another session, you must obtain the new streamUrl by creating a new stream object.
+///
+@property (nullable, strong, readonly, nonatomic) EkoLiveStreamURLInfo *streamerUrl;
+
+/// The RTMP url for watcher side. You use this url to play live video, that is broadcasted from streamerUrl of the same EkoStream instance.
+///
+@property (nullable, strong, readonly, nonatomic) EkoLiveStreamURLInfo *watcherUrl;
+
+/// The RTMP url for watcher side. You use this url to play live video, that is broadcasted from streamerUrl of the same EkoStream instance.
+///
+@property (nonnull, strong, readonly, nonatomic) NSArray<EkoLiveVideoRecordingData *> *recordingData;
 
 #pragma mark - Prevent default initializer
 

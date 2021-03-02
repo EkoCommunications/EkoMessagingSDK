@@ -65,6 +65,12 @@ The data type.
    Number of children of this comment.
  */
 @property (assign, readonly, nonatomic) NSUInteger childrenNumber;
+
+/**
+   Array of latest 5 children comments of this comment.
+ */
+@property (nonnull, nonatomic) NSArray<EkoComment *> *childrenComments;
+
 /**
    Number of reaction of this comment.
  */

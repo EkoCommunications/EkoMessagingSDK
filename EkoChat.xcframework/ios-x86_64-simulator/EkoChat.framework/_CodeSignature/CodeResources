@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/EkoChannelParticipation.h</key>
 		<data>
-		78JQw0LWwnAH4ALL4jW12WysxAw=
+		KviFjDPCPOwVU69pVqqv0RfwWe8=
 		</data>
 		<key>Headers/EkoChannelQuery.h</key>
 		<data>
@@ -70,15 +70,15 @@
 		</data>
 		<key>Headers/EkoChat-Swift.h</key>
 		<data>
-		MrUIoS16Jin9nk+TM/rM8Ug0w1w=
+		9oYm7kluIYBXTnv1fSZejcCQ/n8=
 		</data>
 		<key>Headers/EkoChat.h</key>
 		<data>
-		jlvnJ4GK+LHOwhva4DTtlvIndkw=
+		iQEQLcIoQkUTms+lCY153hNwkGs=
 		</data>
 		<key>Headers/EkoClient.h</key>
 		<data>
-		kbEPEFM/wDRZhb3T9h8FJbvaKKw=
+		WN39ZsN6yXFvMJRQrNEO9A3wS/w=
 		</data>
 		<key>Headers/EkoClientErrorDelegate.h</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>Headers/EkoComment.h</key>
 		<data>
-		YqvIR70YSyhvU2syeslRb3djgJE=
+		CWwkpByyJtit+g6GMGUtotSwIYk=
 		</data>
 		<key>Headers/EkoCommentEditor.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/EkoCommentRepository.h</key>
 		<data>
-		md8YOKFye9wAFL1VT3gcRPuiQ7k=
+		FhwybNY+lCWQnjRbqTAipIUXmT0=
 		</data>
 		<key>Headers/EkoCommunity.h</key>
 		<data>
@@ -130,7 +130,7 @@
 		</data>
 		<key>Headers/EkoCommunityParticipation.h</key>
 		<data>
-		ws2MApzxjewGJ1NXKFvIizxS0eI=
+		OBecdLGje2gJ90Z1YR6haL265qo=
 		</data>
 		<key>Headers/EkoCommunityRepository.h</key>
 		<data>
@@ -158,11 +158,11 @@
 		</data>
 		<key>Headers/EkoEnums.h</key>
 		<data>
-		7/2M1UBuXsAVeIf1CboiZJBrMhU=
+		M259yizLsgYhTjCLjVe5eTkmgjI=
 		</data>
 		<key>Headers/EkoFeedRepository.h</key>
 		<data>
-		M4qk4G+AsSDMH6OCQDafrDgrjEM=
+		kNGnC94XwYTTLXuLm1dX2rBrro8=
 		</data>
 		<key>Headers/EkoFileData.h</key>
 		<data>
@@ -190,7 +190,11 @@
 		</data>
 		<key>Headers/EkoLiveStreamURLInfo.h</key>
 		<data>
-		uRipVeO6dn2Oul3+ZLJcdW6c7/w=
+		usXMJRl6NoHjcAq9Bt0xAiY9vas=
+		</data>
+		<key>Headers/EkoLiveVideoRecordingData.h</key>
+		<data>
+		hYdy1GhLV4kdiiK5mgsX5qIugJs=
 		</data>
 		<key>Headers/EkoMediaRepository.h</key>
 		<data>
@@ -262,7 +266,11 @@
 		</data>
 		<key>Headers/EkoStream.h</key>
 		<data>
-		6+ySMfgV5HAAFwsMqd5LW0COQaw=
+		TSbYKdqoFlhneYKCbQKTA6M3+eo=
+		</data>
+		<key>Headers/EkoStreamCollectionQuery.h</key>
+		<data>
+		hE+Gm+onNxkRKC5ZyLO83UtD4R8=
 		</data>
 		<key>Headers/EkoStreamNotificationsManager.h</key>
 		<data>
@@ -270,7 +278,11 @@
 		</data>
 		<key>Headers/EkoStreamRepository.h</key>
 		<data>
-		mQjlbl5pCQJ8AYozzldckv9rtwY=
+		BlVHFSfMQgvX+YDAm+l8vch8Pzo=
+		</data>
+		<key>Headers/EkoStreamStatus.h</key>
+		<data>
+		GGAeetaWgwH5qYBF8eTvp7xJiBU=
 		</data>
 		<key>Headers/EkoTextPostBuilder.h</key>
 		<data>
@@ -298,31 +310,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4FCswVh/oD9Wp9BiYgo8w2Mbekk=
+		K3hq1E/ZTaFkW0boZgHkZeawO+Q=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		FIsgKb8pjU43+JtM1wZ3Cu2suA8=
+		WpHm1Ud/P5KBw5S7FK86I1LrPkQ=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		f0Do5+UHu5+o81W+cLwBxrdsERM=
+		B0vASEMP44cujvLDGwwgyOnFPS0=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lMDwpekfyzudMoVAJrA4w1tpzJA=
+		rT4PwsopdxHSukzf1DVUCZuvWa8=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		FIsgKb8pjU43+JtM1wZ3Cu2suA8=
+		WpHm1Ud/P5KBw5S7FK86I1LrPkQ=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		f0Do5+UHu5+o81W+cLwBxrdsERM=
+		B0vASEMP44cujvLDGwwgyOnFPS0=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		lMDwpekfyzudMoVAJrA4w1tpzJA=
+		rT4PwsopdxHSukzf1DVUCZuvWa8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -416,7 +428,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G5qhNVwNglwIZr7i4tlxCTPFTtEMEVKV6LD8RYge4x0=
+			O2594GIhlxuleW8HcOPhwVyE7rC/dGwB47wRDtfdwBs=
 			</data>
 		</dict>
 		<key>Headers/EkoChannelQuery.h</key>
@@ -451,21 +463,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vup9bytVNuam8HWTdlgfxPJQxdQMrNOUzztR9dYAgOs=
+			JyxCxTxIIuZmhJHe7r0EvWEXR3mpb1fIesOllmoPlMI=
 			</data>
 		</dict>
 		<key>Headers/EkoChat.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P8Wa+PWENHM27smBVa42NUQIuBvl1jKT9Zs4H5ljgws=
+			SFSX5bdkNLOZ0EurLNXTWWsPxVduwGyAWaBIhLguI+0=
 			</data>
 		</dict>
 		<key>Headers/EkoClient.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vI/NYibybPHtu4SDP3imWoMXdd4PvjUy9VM9JyGgUEw=
+			7yJxASQnu+O/wVY56zlGTeUVyDmm5j1gbF2FVfrsMis=
 			</data>
 		</dict>
 		<key>Headers/EkoClientErrorDelegate.h</key>
@@ -486,7 +498,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lPOecSkHF7jZkFBPX5Xyppi3y3UouqwT4PfqzGBzQAs=
+			Hmh8de4W3NI5xr2g8wYh4UbtlMRn2CSMRalnL56ekC8=
 			</data>
 		</dict>
 		<key>Headers/EkoCommentEditor.h</key>
@@ -507,7 +519,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			crEU14uxRZGxeC3ysN/JM+hopLr3UsvZ4VBPgE+P2Ks=
+			7PKltK+NrU6XtUlonSkzJdmiKb2t8C8tpJR04bqXApg=
 			</data>
 		</dict>
 		<key>Headers/EkoCommunity.h</key>
@@ -556,7 +568,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mmz+un/s0htzsy/Hxh3Q2ISeyGVckSh0CVzJvoc9UwY=
+			8oe6I1J0rm84FXStWkDcnKEKHghe8dwE4eEGlli6UIs=
 			</data>
 		</dict>
 		<key>Headers/EkoCommunityRepository.h</key>
@@ -605,14 +617,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			olAxN4t7CIZmduTYIZPSGLnIMu8dNKIdRidFQfPbg6Q=
+			1bjcEOdpU4+C+43gV8Q6PDzxLSS2FQMN2Xv5Aqx2Sh0=
 			</data>
 		</dict>
 		<key>Headers/EkoFeedRepository.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dX5ebyHsq/K9fQ7Nka0qpbh+CT7S6NU032hqxcDgJ34=
+			ZHgu4MWV0x+1oJgMPG/lel9n95WCf0Pd4O7jyv0JxsE=
 			</data>
 		</dict>
 		<key>Headers/EkoFileData.h</key>
@@ -661,7 +673,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qgi2EB+oiaFUwKm3OnsBGpa4OphklDx1/FoV0w9BynY=
+			yXvUXqh2ekCvMPHaksDWU/K/AS16vS2w0h9gIJ3smG4=
+			</data>
+		</dict>
+		<key>Headers/EkoLiveVideoRecordingData.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qw5M6XLpeB6XXHD0XJ13WlhYWnjzbHH6MRBqsiMutjo=
 			</data>
 		</dict>
 		<key>Headers/EkoMediaRepository.h</key>
@@ -787,7 +806,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xPcqAQrixmPap5Cv4h9PyIMcl2GH1Rcm5BrGfiSY1Q8=
+			U679TCSVahYPuwhf3oXAoD6JC2epc89ercGccd2lQLs=
+			</data>
+		</dict>
+		<key>Headers/EkoStreamCollectionQuery.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BYOY+5lW/reg7Gec9EF1Gsj3WpRE/dUj/n7KbNUxHUk=
 			</data>
 		</dict>
 		<key>Headers/EkoStreamNotificationsManager.h</key>
@@ -801,7 +827,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pb3rB/C2JkTyev2uyCfIRyUTZ/CdWYRmG7KkCQcbnro=
+			h332lGjHuKvs7jsQj9uHPS1X392iDbDOpexuk655wh8=
+			</data>
+		</dict>
+		<key>Headers/EkoStreamStatus.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dy1cHViN3TdZmytlGFbtXHue+dpZ7+q193kVljB0EjQ=
 			</data>
 		</dict>
 		<key>Headers/EkoTextPostBuilder.h</key>
@@ -850,42 +883,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wi3RlV8zWROrMOsehM7TJBtUGlWeh412tqxIU0Ahq+w=
+			EH1YWxvwf4rHzoGF4QujwK5SrBJ+j5XNsRs7+wvVT9o=
 			</data>
 		</dict>
 		<key>Modules/EkoChat.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QwwDjaBgRrVQFXwtYn8AxjfqU0t/KGYDgi3dNlE8XRU=
+			bCk7rtYRrMDeidxiZy1c9DZkmKJztRBMZOCSfyLlV3M=
 			</data>
 		</dict>
 		<key>Modules/EkoChat.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mtu6nvoUxuhbkUaiRyEyd+DzIRJ3bR/qTF8G7PmSUzI=
+			1zjw0gt0QSrt8se4fXQ59QY6T+K16B+g1LRLjqOZcd4=
 			</data>
 		</dict>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wi3RlV8zWROrMOsehM7TJBtUGlWeh412tqxIU0Ahq+w=
+			EH1YWxvwf4rHzoGF4QujwK5SrBJ+j5XNsRs7+wvVT9o=
 			</data>
 		</dict>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QwwDjaBgRrVQFXwtYn8AxjfqU0t/KGYDgi3dNlE8XRU=
+			bCk7rtYRrMDeidxiZy1c9DZkmKJztRBMZOCSfyLlV3M=
 			</data>
 		</dict>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mtu6nvoUxuhbkUaiRyEyd+DzIRJ3bR/qTF8G7PmSUzI=
+			1zjw0gt0QSrt8se4fXQ59QY6T+K16B+g1LRLjqOZcd4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

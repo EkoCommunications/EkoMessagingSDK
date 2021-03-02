@@ -65,3 +65,6 @@
 #import <EkoChat/EkoChannelUpdateBuilder.h>
 #import <EkoChat/EkoCommunityParticipation.h>
 #import <EkoChat/EkoStreamNotificationsManager.h>
+#import <EkoChat/EkoLiveVideoRecordingData.h>
+#import <EkoChat/EkoStreamStatus.h>
+#import <EkoChat/EkoStreamCollectionQuery.h>

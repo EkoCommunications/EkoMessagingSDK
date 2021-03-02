@@ -20,6 +20,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class EkoStreamCollectionQuery;
+
 /// EkoStreamRepository manages stream objects
 @interface EkoStreamRepository : NSObject
 
@@ -34,25 +36,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Query
 
-/// Get the collection of the current live streams.
-- (EkoCollection<EkoStream *> *)getLiveStreams;
+/// Get the collection of streams for the specified statuses..
+- (EkoCollection<EkoStream *> *)getStreamsCollectionFormQuery:(EkoStreamCollectionQuery *)query NS_SWIFT_NAME(getStreamsCollection(from:));
 
 /// Get a live object of stream, by id.
 /// @param streamId The unique identifer of stream
 - (EkoObject<EkoStream *> *)getStreamById:(nullable NSString *)streamId;
 
-/// Retrieve a live stream url, in RTMP format.
-///
-/// The url conforms to RTMP protocol, with the following format...
-///
-/// - rtmp://server-ip-address[:port]/application/[appInstance]/[prefix:[path1[/path2/]]]streamName?auth_key
-///
-/// @example https://live-stream.ekochat.com/lion-company/david_gaming?auth_key=secret-1603178792
-///
-/// @param stream The stream instance to retrieve live url.
-/// @param completion Return EkoLiveStreamURLInfo if success, otherwise return an error.
-- (void)getLiveUrlForStream:(nonnull EkoStream *)stream
-                 completion:(void (^)(EkoLiveStreamURLInfo * _Nullable urlInfo, NSError * _Nullable error))completion;
+/// Create a new video stream.
+- (void)createVideoStreamWithTitle:(nonnull NSString *)title
+                       description:(nullable NSString *)description
+                        completion:(void (^_Nonnull)(EkoStream * _Nullable, NSError * _Nullable))completion;
+
+/// Send the request to update streaming status to ".ended", and dispose streaming url.
+- (void)disposeStreamWithId:(NSString *)streamId
+                 completion:(void (^_Nonnull)(EkoStream * _Nullable, NSError * _Nullable))completion;
 
 /* Not used in this version.
 /// @abstract User Level Notification Management object.
