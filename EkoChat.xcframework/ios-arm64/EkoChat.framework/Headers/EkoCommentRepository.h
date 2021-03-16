@@ -71,7 +71,7 @@
  previous page (if the reverse is `.descending`).
  
  @param referenceId: The id of the post/content that you want to fetch comment for.
- @param referenceType: The reference type for this comment. Use .content as reference type if you are querying comments for external content. Else use .post.
+ @param referenceType: The reference type for this comment. Use .content as reference type if you are querying comments for external content else use .post.
  @param filterByParentId: Set this to true if you want to fetch comment thread
  @param parentId: The id of the parent comment.
  @param queryOption: Enum to fetch only deleted comments, not deleted comments or both.
@@ -85,6 +85,19 @@
                                                         parentId:(nullable NSString *)parentId
                                                          orderBy:(EkoOrderBy)orderOption
                                                   includeDeleted:(BOOL)includeDeletedComments;
+
+/**
+ Returns single latest comment for given referenceId
+ 
+ @param referenceId: The id of the post/content that you want to fetch latest comment
+ @param referenceType: Reference type for this comment. Use .content as reference type if you are querying comments for external content else use .post
+ @param includeReplies: Boolean to indicate whether to include comment replies in latest comment or not. Set it to true If you want to fetch only latest parent comment.
+ */
+- (nonnull EkoObject<EkoComment *> *)getLatestCommentWithReferenceId:(nonnull NSString *)referenceId
+                                                       referenceType:(EkoCommentReferenceType)referenceType
+                                                      includeReplies:(BOOL)includeReplies;
+
+
 
 /// Block call of `init` and `new` because this object cannot be created directly
 - (nonnull instancetype)init NS_UNAVAILABLE;

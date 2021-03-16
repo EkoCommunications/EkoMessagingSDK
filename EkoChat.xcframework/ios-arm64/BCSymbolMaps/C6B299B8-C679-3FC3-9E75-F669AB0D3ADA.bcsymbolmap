@@ -3458,6 +3458,33 @@ __OBJC_$_PROP_LIST_EkoChannelUpdateWithBuilderTransaction
 __OBJC_CLASS_RO_$_EkoChannelUpdateWithBuilderTransaction
 /Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/Channel/Transactions/ChannelUpdate/EkoChannelUpdateWithBuilderTransaction.m
 EkoChat/Channel/Transactions/ChannelUpdate/EkoChannelUpdateWithBuilderTransaction.m
+-[EkoLatestCommentQueryTransaction initWithReferenceId:referenceType:includeReplies:]
+-[EkoLatestCommentQueryTransaction preprocessWithStore:]
+-[EkoLatestCommentQueryTransaction getCommentModelFromStore:]
+-[EkoLatestCommentQueryTransaction getQueryPredicate]
+-[EkoLatestCommentQueryTransaction processResult:withStore:]
+___60-[EkoLatestCommentQueryTransaction processResult:withStore:]_block_invoke
+-[EkoLatestCommentQueryTransaction request]
+-[EkoLatestCommentQueryTransaction valueForSortType:]
+-[EkoLatestCommentQueryTransaction referenceId]
+-[EkoLatestCommentQueryTransaction setReferenceId:]
+-[EkoLatestCommentQueryTransaction referenceType]
+-[EkoLatestCommentQueryTransaction setReferenceType:]
+-[EkoLatestCommentQueryTransaction includeReplies]
+-[EkoLatestCommentQueryTransaction setIncludeReplies:]
+-[EkoLatestCommentQueryTransaction .cxx_destruct]
+__OBJC_CLASS_PROTOCOLS_$_EkoLatestCommentQueryTransaction
+__OBJC_METACLASS_RO_$_EkoLatestCommentQueryTransaction
+__OBJC_$_INSTANCE_METHODS_EkoLatestCommentQueryTransaction
+_OBJC_IVAR_$_EkoLatestCommentQueryTransaction._includeReplies
+_OBJC_IVAR_$_EkoLatestCommentQueryTransaction._referenceId
+_OBJC_IVAR_$_EkoLatestCommentQueryTransaction._referenceType
+__OBJC_$_INSTANCE_VARIABLES_EkoLatestCommentQueryTransaction
+__OBJC_$_PROP_LIST_EkoLatestCommentQueryTransaction
+__OBJC_CLASS_RO_$_EkoLatestCommentQueryTransaction
+/Users/nishanniraula/Desktop/sdk/EkoMessagingSDKIOS/EkoChat/Comment/Transactions/EkoLatestCommentQueryTransaction.m
+EkoChat/Comment/Transactions/EkoLatestCommentQueryTransaction.m
+__60-[EkoLatestCommentQueryTransaction processResult:withStore:]_block_invoke
 -[EkoConfig endpoint]
 +[EkoConfig domainKey]
 +[EkoConfig setDomainKey:]
@@ -4082,6 +4109,7 @@ EkoChat/Comment/Model/EkoComment.h
 ___42-[EkoCommentRepository commentTransformer]_block_invoke
 -[EkoCommentRepository commentsWithReferenceId:referenceType:filterByParentId:parentId:orderBy:includeDeleted:]
 -[EkoCommentRepository createCommentWithReferenceId:referenceType:parentId:text:]
+-[EkoCommentRepository getLatestCommentWithReferenceId:referenceType:includeReplies:]
 -[EkoCommentRepository client]
 -[EkoCommentRepository .cxx_destruct]
 __OBJC_METACLASS_RO_$_EkoCommentRepository
