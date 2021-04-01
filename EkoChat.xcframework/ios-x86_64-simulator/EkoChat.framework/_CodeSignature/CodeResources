@@ -128,13 +128,25 @@
 		<data>
 		qvUAluOjBjFa9Ak+mWQT9u41Dlc=
 		</data>
+		<key>Headers/EkoCommunityNotification.h</key>
+		<data>
+		1yWZfMFotl3gc5RdWSAtxfxGbjM=
+		</data>
+		<key>Headers/EkoCommunityNotificationEvent.h</key>
+		<data>
+		rAu1n03S37DojCAmTnmyro9Qsog=
+		</data>
+		<key>Headers/EkoCommunityNotificationsManager.h</key>
+		<data>
+		1LyNPCt8Zw+msVfhcR81kpSBs2s=
+		</data>
 		<key>Headers/EkoCommunityParticipation.h</key>
 		<data>
 		OBecdLGje2gJ90Z1YR6haL265qo=
 		</data>
 		<key>Headers/EkoCommunityRepository.h</key>
 		<data>
-		qxhF9lm0yEJZBXPWdPD35pysPII=
+		bMdWxKjSuef7FNau0amsztQzvTQ=
 		</data>
 		<key>Headers/EkoCommunityUpdateDataBuilder.h</key>
 		<data>
@@ -256,6 +268,10 @@
 		<data>
 		wUroqHkHSuL7srm/+ZZ0yCitLC8=
 		</data>
+		<key>Headers/EkoRoleFilter.h</key>
+		<data>
+		fZ8Jgx4qGXEtovUXpoj+Su0uq6k=
+		</data>
 		<key>Headers/EkoStandardChannelQuery.h</key>
 		<data>
 		YnPCSnrhNKy9m9y8TTs1AZNm7VA=
@@ -300,9 +316,17 @@
 		<data>
 		sccJYBsFDTJy+FS9XYlGGDD/C8Y=
 		</data>
+		<key>Headers/EkoUserNotification.h</key>
+		<data>
+		snxcq5SVlS07c0BSooqpW+n8dUE=
+		</data>
+		<key>Headers/EkoUserNotificationModule.h</key>
+		<data>
+		m8+M3emr2LGND8FgEogSmnpaxg0=
+		</data>
 		<key>Headers/EkoUserNotificationsManager.h</key>
 		<data>
-		MjEd8Wq29Yz+Y/FdRENdKUwuSPc=
+		Mt50qwTu4wxHi9AnJLEZF+WBUc8=
 		</data>
 		<key>Headers/EkoUserRepository.h</key>
 		<data>
@@ -310,7 +334,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LRLxo9IFcwHg3BZx0hU1gfvMRbg=
+		1p4I2tsEcVBFcz8spL69J5um1iU=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -322,7 +346,7 @@
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rT4PwsopdxHSukzf1DVUCZuvWa8=
+		6nNjxapJtjns96CriKxmr6eM5Hc=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -334,7 +358,7 @@
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		rT4PwsopdxHSukzf1DVUCZuvWa8=
+		6nNjxapJtjns96CriKxmr6eM5Hc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -564,6 +588,27 @@
 			1/0FX0HeoArUslQlkuJjN39opZiIZC408pQPMd7Luzs=
 			</data>
 		</dict>
+		<key>Headers/EkoCommunityNotification.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ISuawrk7IGtrjdWv6vY36yz51GUsoqq/l+WBpiK9eJk=
+			</data>
+		</dict>
+		<key>Headers/EkoCommunityNotificationEvent.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			woaGSrF7tBUpjviLjRcoD647RnLFaoYUXabAyROHMCE=
+			</data>
+		</dict>
+		<key>Headers/EkoCommunityNotificationsManager.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Eux1brcDbrPrHakJrOfxEv8bdpTYjsOyh4uEDfUpgjY=
+			</data>
+		</dict>
 		<key>Headers/EkoCommunityParticipation.h</key>
 		<dict>
 			<key>hash2</key>
@@ -575,7 +620,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X5QG4Uc8QSfVAF2wB3icMyfMAiOkSz2gWXFoeZWdOwo=
+			Nlc+BjLPGL5VgY1+5YWjcAybUXfVp/f9vFSTBlnqiHc=
 			</data>
 		</dict>
 		<key>Headers/EkoCommunityUpdateDataBuilder.h</key>
@@ -788,6 +833,13 @@
 			0c8oHvfq8/OLXdbm8SsyHBnzuwXf1g7lYmOy8FWqSR4=
 			</data>
 		</dict>
+		<key>Headers/EkoRoleFilter.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TZY2Yc+P5D46zpj/h1IEKi458nyfpvdP1ActHwj5SFE=
+			</data>
+		</dict>
 		<key>Headers/EkoStandardChannelQuery.h</key>
 		<dict>
 			<key>hash2</key>
@@ -865,11 +917,25 @@
 			lCMK/Jr783DqAaWd5+aVIzjcF1TgjPVDXwVwQznBl0U=
 			</data>
 		</dict>
+		<key>Headers/EkoUserNotification.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OSTCMf7SAn+o4+wZ/M7HZtyplKT8aNuL/a5zjvg6sUE=
+			</data>
+		</dict>
+		<key>Headers/EkoUserNotificationModule.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PJQo8CbUlhXePPKTZEbzRwoDOf80yrfUHAd/tVUH7BI=
+			</data>
+		</dict>
 		<key>Headers/EkoUserNotificationsManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+eUiSCbcPqALir7nzHCGV3z/StEpiCA71oVd+cIFcHM=
+			RyuMtnQ54T0rNqPNvQcTbBJkYkrBYGcwBQ8QWlguAWU=
 			</data>
 		</dict>
 		<key>Headers/EkoUserRepository.h</key>
@@ -897,7 +963,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1zjw0gt0QSrt8se4fXQ59QY6T+K16B+g1LRLjqOZcd4=
+			xZDofRJ3kPA8AfTPTTTOlAkpxNaje10kqsDiSn2F4Lw=
 			</data>
 		</dict>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftdoc</key>
@@ -918,7 +984,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1zjw0gt0QSrt8se4fXQ59QY6T+K16B+g1LRLjqOZcd4=
+			xZDofRJ3kPA8AfTPTTTOlAkpxNaje10kqsDiSn2F4Lw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
