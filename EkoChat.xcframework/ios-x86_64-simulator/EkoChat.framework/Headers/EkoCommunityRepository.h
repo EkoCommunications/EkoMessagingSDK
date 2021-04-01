@@ -12,6 +12,7 @@
 #import <EkoChat/EkoEnums.h>
 #import <EkoChat/EkoCommunityCategory.h>
 #import <EkoChat/EkoBuilder.h>
+#import <EkoChat/EkoCommunityNotificationsManager.h>
 
 @class EkoCommunity;
 
@@ -69,6 +70,11 @@ NS_ASSUME_NONNULL_BEGIN
                                                               sortBy:(EkoCommunitySortOption)sortBy
                                                           categoryId:(nullable NSString *)categoryId
                                                       includeDeleted:(BOOL)includeDeletedCommunities;
+
+/**
+ @abstract Community level push notifications management object.
+ */
+- (nonnull EkoCommunityNotificationsManager *)notificationManagerForCommunityId:(nonnull NSString *)communityId;
 
 /**
  Retrieves community for particular community id
