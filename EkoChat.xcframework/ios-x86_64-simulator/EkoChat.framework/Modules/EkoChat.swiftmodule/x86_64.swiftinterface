@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name EkoChat
 import CommonCrypto
 import CoreFoundation
@@ -22,8 +22,8 @@ import zlib
   public var description: Swift.String {
     get
   }
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -33,14 +33,14 @@ import zlib
   @objc final public func emit(_ event: Swift.String, with items: [Any])
   final public func emitWithAck(_ event: Swift.String, _ items: EkoChat.SocketData...) -> EkoChat.OnAckCallback
   @objc final public func emitWithAck(_ event: Swift.String, with items: [Any]) -> EkoChat.OnAckCallback
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers final public class SocketRawAckView : ObjectiveC.NSObject {
   final public func with(_ items: EkoChat.SocketData...)
   @objc final public func with(_ items: [Any])
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public protocol SocketEnginePollable : EkoChat.SocketEngineSpec {
   var invalidated: Swift.Bool { get }
@@ -59,8 +59,8 @@ extension SocketEnginePollable {
 }
 @objc final public class EkoLiveChannelQueryBuilder : ObjectiveC.NSObject {
   @objc(initWithIncludingTags:excludingTags:includeDeleted:) public init(includingTags: [Swift.String], excludingTags: [Swift.String], includeDeleted: Swift.Bool)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc final public class SocketAckEmitter : ObjectiveC.NSObject {
   @objc final public var rawEmitView: EkoChat.SocketRawAckView {
@@ -72,8 +72,8 @@ extension SocketEnginePollable {
   public init(socket: EkoChat.SocketIOClient, ackNum: Swift.Int)
   final public func with(_ items: EkoChat.SocketData...)
   @objc final public func with(_ items: [Any])
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers final public class OnAckCallback : ObjectiveC.NSObject {
   @objc deinit
@@ -150,8 +150,8 @@ open class ScreamSSLSecurity : EkoChat.SSLTrustValidator {
 }
 @objc final public class EkoLiveChannelQuery : EkoChat.EkoChannelQuery {
   @objc(initWithBuilder:client:) public init(builder: EkoChat.EkoLiveChannelQueryBuilder, client: EkoChat.EkoClient)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc public enum SocketEnginePacketType : Swift.Int {
   case open
@@ -161,11 +161,11 @@ open class ScreamSSLSecurity : EkoChat.SSLTrustValidator {
   case message
   case upgrade
   case noop
+  public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
-  public init?(rawValue: Swift.Int)
 }
 @objc open class SocketIOClient : ObjectiveC.NSObject, EkoChat.SocketIOClientSpec {
   @objc final public let nsp: Swift.String
@@ -229,13 +229,13 @@ open class ScreamSSLSecurity : EkoChat.SSLTrustValidator {
   @objc convenience public init(usePublicKeys: Swift.Bool = true)
   convenience public init(certs: [EkoChat.SSLCert], usePublicKeys: Swift.Bool)
   public func isValid(_ trust: Security.SecTrust, domain: Swift.String?) -> Swift.Bool
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public enum SocketAckStatus : Swift.String {
   case noAck
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -243,8 +243,8 @@ public enum SocketAckStatus : Swift.String {
 @objc public class MultipartRequestBuilder : ObjectiveC.NSObject {
   @objc public init(files: [EkoChat.UploadableFile], params: [Swift.String : Any]?, endpoint: Swift.String, accessToken: Swift.String)
   @objc final public func build() -> Foundation.URLRequest?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public enum SocketIOClientOption {
   case compress
@@ -308,8 +308,8 @@ extension SocketPacket {
     public var isBinary: Swift.Bool {
       get
     }
-    public typealias RawValue = Swift.Int
     public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
     }
@@ -343,8 +343,8 @@ public enum CloseCode : Swift.UInt16 {
   case encoding
   case policyViolated
   case messageTooBig
-  public typealias RawValue = Swift.UInt16
   public init?(rawValue: Swift.UInt16)
+  public typealias RawValue = Swift.UInt16
   public var rawValue: Swift.UInt16 {
     get
   }
@@ -358,10 +358,10 @@ public enum ErrorType : Swift.Error {
   case upgradeError
   case closeError
   public static func == (a: EkoChat.ErrorType, b: EkoChat.ErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public struct WSError : Swift.Error {
   public let type: EkoChat.ErrorType
@@ -421,8 +421,8 @@ public protocol WSStream {
   public func cleanup()
   public func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
   @objc open func stream(_ aStream: Foundation.Stream, handle eventCode: Foundation.Stream.Event)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public protocol WebSocketDelegate : AnyObject {
   func websocketDidConnect(socket: EkoChat.WebSocketClient)
@@ -449,8 +449,8 @@ public protocol WebSocketAdvancedDelegate : AnyObject {
     case connectionClose
     case ping
     case pong
-    public typealias RawValue = Swift.UInt8
     public init?(rawValue: Swift.UInt8)
+    public typealias RawValue = Swift.UInt8
     public var rawValue: Swift.UInt8 {
       get
     }
@@ -612,18 +612,18 @@ public enum SocketClientEvent : Swift.String {
   case reconnectAttempt
   case statusChange
   case websocketUpgrade
+  public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
-  public init?(rawValue: Swift.String)
 }
 @objc final public class EkoCommunityChannelQueryBuilder : ObjectiveC.NSObject {
   @objc(initWithFilter:includingTags:excludingTags:includeDeleted:) public init(filter: EkoChat.EkoChannelQueryFilter, includingTags: [Swift.String], excludingTags: [Swift.String], includeDeleted: Swift.Bool)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
-@objc public protocol SocketManagerSpec : AnyObject, EkoChat.SocketEngineClient {
+@objc public protocol SocketManagerSpec : EkoChat.SocketEngineClient {
   @objc var defaultSocket: EkoChat.SocketIOClient { get }
   @objc var engine: EkoChat.SocketEngineSpec? { get set }
   @objc var forceNew: Swift.Bool { get set }
@@ -658,8 +658,8 @@ public enum SocketClientEvent : Swift.String {
 }
 @objc final public class EkoCommunityChannelQuery : EkoChat.EkoChannelQuery {
   @objc(initWithBuilder:client:) public init(builder: EkoChat.EkoCommunityChannelQueryBuilder, client: EkoChat.EkoClient)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public protocol SocketLogger : AnyObject {
   var log: Swift.Bool { get set }
@@ -816,10 +816,10 @@ public enum SocketParsableError : Swift.Error {
   case invalidPacket
   case invalidPacketType
   public static func == (a: EkoChat.SocketParsableError, b: EkoChat.SocketParsableError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public protocol SocketDataBufferable : AnyObject {
   var waitingPackets: [EkoChat.SocketPacket] { get set }
@@ -835,8 +835,8 @@ extension SocketParsable where Self : EkoChat.SocketDataBufferable, Self : EkoCh
   @objc public var mimeType: Swift.String
   @objc public var metaData: [Swift.String : Any]
   @objc public init(fileData: Foundation.Data, fileName: Swift.String?)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class EkoFileUploadService : ObjectiveC.NSObject {
   @objc override dynamic public init()
