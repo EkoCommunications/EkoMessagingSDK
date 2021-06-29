@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/EkoChat-Swift.h</key>
 		<data>
-		4Tw7Xc2A/InKDoQKEzoBszRr2VQ=
+		JeWGwaHDUZ1N2DPb75AYQBQd1GI=
 		</data>
 		<key>Headers/EkoChat.h</key>
 		<data>
@@ -334,31 +334,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zaqHbxnBBDpleaxdU9o0YYrIjIU=
+		xV4aw03uPJjJO7bQIcw3hUIfDNw=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		755prFMNRc/NLG7ADgTsWbgZfEs=
+		+b1INUxP0gm0ugNGgi8ffBHx0kE=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		8Bh6+EAEWpLEtxDeamYweQiS6tA=
+		9lzwzrCuaB4vznpxSyA8TvaBgCc=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CtvaWfRihIZr0CTJaO0108QXAbg=
+		JWL76JMLHYZeMIXN2M3s6ufzfGs=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		755prFMNRc/NLG7ADgTsWbgZfEs=
+		+b1INUxP0gm0ugNGgi8ffBHx0kE=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		8Bh6+EAEWpLEtxDeamYweQiS6tA=
+		9lzwzrCuaB4vznpxSyA8TvaBgCc=
 		</data>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		CtvaWfRihIZr0CTJaO0108QXAbg=
+		JWL76JMLHYZeMIXN2M3s6ufzfGs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -487,7 +487,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1cwWiMQIFKz/ZAhmyBS4fMlRFmVtI/Moonkmwh63deo=
+			lZ6KSPQrp6rdQ2ZhDUwmde5hdTucXD6DtnEgB4Tf/ic=
 			</data>
 		</dict>
 		<key>Headers/EkoChat.h</key>
@@ -949,42 +949,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zaCDTjV/TuRblMzGmYZG2rr+/b6RkOxQlxUi69skreM=
+			oqeamk/4jn4HWaM7K4GwRrXc0YuqfGx27adhUXxCPo8=
 			</data>
 		</dict>
 		<key>Modules/EkoChat.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yuxkcfKx9qwb4jbdvh5qg6ilsw0hmn1VVGOPW5hLtIQ=
+			5sng/S6t7QtyWW9zJJAaU2wwF7FEdnMs7TXgVTtY5qo=
 			</data>
 		</dict>
 		<key>Modules/EkoChat.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1jpT69n5LfcFK0+tcaDK3DfYBLgtc/U516dN3wa31K8=
+			7fMg28M614w1Wmk584sGsNv5RWrIUHpahj02bNl3nM4=
 			</data>
 		</dict>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zaCDTjV/TuRblMzGmYZG2rr+/b6RkOxQlxUi69skreM=
+			oqeamk/4jn4HWaM7K4GwRrXc0YuqfGx27adhUXxCPo8=
 			</data>
 		</dict>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yuxkcfKx9qwb4jbdvh5qg6ilsw0hmn1VVGOPW5hLtIQ=
+			5sng/S6t7QtyWW9zJJAaU2wwF7FEdnMs7TXgVTtY5qo=
 			</data>
 		</dict>
 		<key>Modules/EkoChat.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1jpT69n5LfcFK0+tcaDK3DfYBLgtc/U516dN3wa31K8=
+			7fMg28M614w1Wmk584sGsNv5RWrIUHpahj02bNl3nM4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
