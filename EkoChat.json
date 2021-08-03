@@ -13,6 +13,7 @@
     "4.7.0": "https://s3-ap-southeast-1.amazonaws.com/ekosdk-release/ios/4.7.0/ekosdk.zip",
     "4.7.1": "https://s3-ap-southeast-1.amazonaws.com/ekosdk-release/ios/4.7.1/ekosdk.zip",
     "4.8.0": "https://s3-ap-southeast-1.amazonaws.com/ekosdk-release/ios/4.8.0/ekosdk.zip",
-    "4.8.1": "https://s3-ap-southeast-1.amazonaws.com/ekosdk-release/ios/4.8.1/ekosdk.zip"
-    "4.8.4": "https://s3-ap-southeast-1.amazonaws.com/ekosdk-release/ios/4.8.4/ekosdk.zip"
+    "4.8.1": "https://s3-ap-southeast-1.amazonaws.com/ekosdk-release/ios/4.8.1/ekosdk.zip",
+    "4.8.4": "https://s3-ap-southeast-1.amazonaws.com/ekosdk-release/ios/4.8.4/ekosdk.zip",
+    "4.8.5": "https://s3-ap-southeast-1.amazonaws.com/ekosdk-release/ios/4.8.5/ekosdk.zip"
 }
