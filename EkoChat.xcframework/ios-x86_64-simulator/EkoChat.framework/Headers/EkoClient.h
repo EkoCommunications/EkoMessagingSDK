@@ -63,14 +63,18 @@ __attribute__((objc_subclassing_restricted))
 /**
  @abstract Registers the the user with the current device.
  @note If the passed userId does not match the current user, the current user will be unregistered.
- @note the `displayName` passed value is ignored if the user has previously registered with this device, use `setDisplayName:completion:` instead.
+ @note the `displayName` passed value is ignored if the user has previously registered with this device, use `updateUser:completion:` instead.
  @param userId A user id. Required.
  @param displayName The display name of the user. Required.
  @param authToken: Extra authentication token to be used for secure device registration. This is optional. Please refer to our Authentication documentation for further details.
+ @param completion: Completion block to be called when device registration is successful or failed.
+ 
+ @note: Error occurred in this method will not be delivered through `clientErrorDelegate`. 
  */
 - (void)registerDeviceWithUserId:(nonnull NSString *)userId
                      displayName:(nullable NSString *)displayName
-                       authToken:(nullable NSString *)authToken;
+                       authToken:(nullable NSString *)authToken
+                      completion:(nullable EkoRequestCompletion)completion;
 
 /**
  @abstract Unregisters the current user associated with the device.
