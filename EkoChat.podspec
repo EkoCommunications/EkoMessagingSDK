@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "EkoChat"
-    s.version      = "4.8.5"
+    s.version      = "4.8.6"
     s.summary      = "An SDK for messaging provided by Upstra."
     s.description  = <<-DESC
     A powerful chat messaging tools for productivity powered by Upstra.
